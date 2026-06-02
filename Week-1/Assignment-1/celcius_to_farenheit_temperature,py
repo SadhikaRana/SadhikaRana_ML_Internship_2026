@@ -1,0 +1,4 @@
+# 3. Convert temperature from celcius to Farenheit 
+celcius_temp = float(input("Enter the temperature in celcius:"))
+farenheit_temp = float((celcius_temp * 9/5) + 32)
+print("Temperature in farenheit is :", farenheit_temp)
