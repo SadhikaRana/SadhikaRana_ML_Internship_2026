@@ -1,39 +1,65 @@
-# Assignment 4 - Student Performance Prediction using Machine Learning
+# Loan Prediction using Machine Learning
 
-## Objective
-Build machine learning models to predict whether a student will Pass or Fail based on demographic and academic attributes.
+## Overview
+This project predicts whether a loan application will be approved or not using Machine Learning classification techniques. The dataset was preprocessed, analyzed, and used to train multiple models for loan approval prediction.
 
-## Dataset
-StudentsPerformance.csv
+## Objectives
+- Perform data preprocessing and cleaning.
+- Handle missing values.
+- Convert categorical features into numerical format.
+- Train and evaluate Machine Learning models.
+- Compare model performance using multiple evaluation metrics.
+- Apply cross-validation and hyperparameter tuning.
+- Analyze underfitting and overfitting behavior.
 
-## Tasks Performed
-- Loaded and explored the dataset
-- Created Average Score feature
-- Generated Pass/Fail target variable
-- Encoded categorical features
-- Split data into training and testing sets
-- Trained:
-  - Logistic Regression
-  - Decision Tree
-  - Random Forest
-- Evaluated models using:
-  - Accuracy
-  - Precision
-  - Recall
-  - F1-Score
-- Applied 5-Fold Cross Validation
-- Tuned Decision Tree hyperparameters
-- Tuned Random Forest hyperparameters
-- Plotted Learning Curve
-- Compared model performances
+## Dataset Features
+The dataset contains applicant information such as:
+- Gender
+- Marital Status
+- Dependents
+- Education
+- Self Employment Status
+- Applicant Income
+- Coapplicant Income
+- Loan Amount
+- Loan Amount Term
+- Credit History
+- Property Area
 
-## Results
+### Target Variable
+- **Loan_Status**
+  - Approved (Y)
+  - Not Approved (N)
 
-| Model | Accuracy |
-|---------|---------|
-| Logistic Regression | 100.0% |
-| Decision Tree | 98.5% |
-| Random Forest | 99.5% |
+## Data Preprocessing
+- Missing value treatment
+- Categorical variable encoding
+- Feature scaling (if required)
+- Feature and target selection
+
+## Models Used
+1. Logistic Regression
+2. Decision Tree Classifier
+3. Random Forest Classifier
+
+## Evaluation Metrics
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+## Advanced Techniques
+- Stratified 5-Fold Cross Validation
+- Hyperparameter Tuning using GridSearchCV
+- Learning Curve Analysis
+- Bias-Variance Analysis
+
+## Key Findings
+- Compared multiple classification algorithms.
+- Evaluated model stability using cross-validation.
+- Tuned Random Forest parameters for improved performance.
+- Analyzed underfitting and overfitting using different Decision Tree depths.
+- Identified the model with the best balance between bias and variance.
 
 ## Conclusion
-Logistic Regression achieved the best performance with perfect accuracy and classification metrics. The learning curve indicates strong generalization and minimal overfitting, making it the most effective model for this dataset.
+Machine Learning techniques were successfully applied to predict loan approval status. Multiple models were trained and compared, and the best-performing model was selected based on evaluation metrics and cross-validation results.
